@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="385.0" prefWidth="760.0">
+      <children>
+         <Label fx:id="labelQuestionText" layoutX="27.0" layoutY="14.0" prefHeight="53.0" prefWidth="712.0" text="Label">
+            <font>
+               <Font size="24.0" />
+            </font>
+         </Label>
+         <Button fx:id="yesButton" layoutX="228.0" layoutY="169.0" mnemonicParsing="false" onAction="#onYesButtonClick" prefHeight="53.0" prefWidth="95.0" text="Tak" />
+         <Button fx:id="noButton" layoutX="434.0" layoutY="169.0" mnemonicParsing="false" onAction="#onNoButtonClick" prefHeight="53.0" prefWidth="95.0" text="Nie" />
+         <StackedBarChart fx:id="diseasesChart" layoutX="139.0" layoutY="261.0" prefHeight="286.0" prefWidth="463.0">
+           <xAxis>
+             <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+           </xAxis>
+           <yAxis>
+             <NumberAxis fx:id="yAxis" side="LEFT" />
+           </yAxis>
+         </StackedBarChart>
+      </children>
+   </AnchorPane>
+</VBox>
